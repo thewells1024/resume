@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Kent}{Kawahara}
+\phone[mobile]{+1~(951)~314~1525}
+\email{kkawahara1028@gmail.com}
+
+\newcommand{\project}[3]{
+    \begin{tabular}{p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}
+        \raggedleft\hintstyle{#1} & #2\\
+                            ~     & #3
+    \end{tabular}
+}
+\sethintscolumntowidth{Jan 2016--Jun 2019}
+
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2014--2019}
+    {B.S. Computer Science}
+    {California Polytechnic State University San Luis Obispo}
+    {San Luis Obispo, CA}
+    {}
+    {}
+
+\section{Experience}
+\cventry{Jan 2016--Jun 2019}
+    {Jr Software Development Engineer}
+    {Amazon.com}
+    {San Luis Obispo, CA}
+    {}
+    {
+        Worked to develop software for amazon.com.
+        \begin{itemize}
+            \item Learned about the software development cycle
+            \item Strengthened my knowledge of Java and TypeScript
+            \item Learned about Spring
+            \item Learned about scrum methodology
+        \end{itemize}
+    }
+\cventry{Aug 2019--May 2020}
+    {Software Development Engineer}
+    {Amazon Web Services}
+    {Seattle, WA}
+    {}
+    {
+        Worked to develop software for Amazon Web Services.
+        \begin{itemize}
+            \item Strengthened knowledge of Python
+            \item Learned about Docker
+        \end{itemize}
+    }
+
+\section{Languages}
+\cvitem{Object Oriented}{Java, Python, Swift, TypeScript, JavaScript, Ruby}
+\cvitem{Functional}{Racket, Haskell}
+\cvitem{Other}{C, Rust, Bash, SQL}
+
+\section{Technologies}
+\cvitem{Frameworks}{Spring, Flask, Angular}
+\cvitem{Libraries}{Dagger, Guava, Jinja, JQuery}
+\cvitem{AWS}{DynamDB, Lambda, S3, CloudFormation}
+\cvitem{Other}{Git, Make, Ant, Gradle}
+
+\section{Projects}
+\project{Senior Project}
+    {\httplink{https://github.com/thewells1024/SeniorProject}}
+    {
+        \raggedright{Used Racket to show that typed units can be used to implement extensible denotational semantics}
+        \begin{itemize}
+            \item Strengthened my knowledge of Racket
+        \end{itemize}
+    }
+\end{document}
