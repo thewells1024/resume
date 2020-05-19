@@ -1,9 +1,10 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,sans,final]{moderncv}
 
 \moderncvstyle{classic}
 \moderncvcolor{black}
 
-\usepackage[scale=0.75]{geometry}
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\recomputelengths
 
 \newcommand{\project}[3]{
     \begin{tabular}{p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}
@@ -18,13 +19,11 @@
 \email{kent@kentkawa.me}
 \address{Seattle, WA}
 \social[github]{thewells1024}
-\extrainfo{\httplink{https://kentkawa.me}}
 
-\sethintscolumntowidth{Moderate Proficency}
+\sethintscolumntowidth{Aug 2019–May 2020}
 
 \begin{document}
 \makecvtitle
-
 \section{Education}
 \cventry{2014--2019}
     {B.S. Computer Science}
@@ -37,12 +36,13 @@
 \cventry{Aug 2019--May 2020}
     {Software Development Engineer}
     {Amazon Web Services}
-    {Seattle, WA}
+    {Bellevue, WA}
     {}
     {
         \begin{itemize}
-            \item Designed, implemented, tested, and deployed software solutions for Amazon Textract
-            \item Monitored and troubleshot issues with Amazon Textract
+            \item Reimplemented orchestration for Amazon Textract's AnalyzeDocument API in Python to increase testability and maintainability
+            \item Monitored and troubleshot issues with Amazon Textract's service
+            \item Added operational improvements including one box stages, integration testing, load testing, and regression testing
         \end{itemize}
     }
 \cventry{Jun 2018--Sep 2018}
@@ -52,7 +52,7 @@
     {}
     {
         \begin{itemize}
-            \item Created software to assist AWS Certificate Management in validating ownership of domains for certificate issuance
+            \item Created a tool in Java to allow team members and customer service agents to solve problems caused by GDPR by viewing whether contact information was included in the domain's whois response
             \item Received an award for commitment to Learn and Be Curious
         \end{itemize}
     }
@@ -63,7 +63,7 @@
     {}
     {
         \begin{itemize}
-            \item Investigated ways to screen and categorize content submitted to Kindle Direct Publishing
+            \item Investigated ways to screen and categorize content submitted to Kindle Direct Publishing using unsupervised learning methods in Python
         \end{itemize}
     }
 \cventry{Jan 2016--Jun 2019}
@@ -73,8 +73,10 @@
     {}
     {
         \begin{itemize}
-            \item Designed, implemented, and tested software solutions for Kindle Direct Publishing.
-            \item Implemented a website using Angular for client side rendering served over Spring Boot
+            \item Implemented a website using Angular and TypeScript for client side rendering served using Spring and Java
+            \item Upgraded a website to a new major version of a framework with major backwards compatibility breaking changes
+            \item Created a webpage page to allow teams using our service to explore and test the different customization features we supported
+            \item Aided newer Jr Developers in learning the tools and systems
         \end{itemize}
     }
 
@@ -94,4 +96,8 @@
     {
         \raggedright{Demonstrated that typed units are sufficient to implement extensible denotational semantics using Racket}
     }
+
+\section{Interests}
+\cvlistdoubleitem{Baking}{Board games}
+\cvlistdoubleitem{Programming Languages}{Line Dancing}
 \end{document}
